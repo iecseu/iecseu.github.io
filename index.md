@@ -2,6 +2,8 @@
 layout: archive
 permalink: /
 title: "Latest Posts"
+image:
+	feature:cover.jpg
 ---
 
 <div class="tiles">
