@@ -1,9 +1,9 @@
 # Site wide configuration
 
-title: "IECS Site"
+title: "iecs' Site"
 description: "This is a description of my awesome site."
-logo: logo.png
-teaser: head.gif
+logo: logo.jpg
+teaser: 
 locale: en
 url:
 feed:
@@ -26,15 +26,15 @@ gems:
 
 # Site owner
 owner:
-  name:
-  email:
-  twitter:
+  name: iecs(孟凡喆）
+  email: mfzh502045076@gmail.com
+  twitter: iecs
   google:
     ad-client:
     ad-slot:
   bio:
-  avatar: bio-photo.jpg # 160x160 px image for author byline
-  disqus-shortname:
+  avatar: logo.jpg # 160x160 px image for author byline
+  disqus-shortname: iecs
 
 
 include:

@@ -1,6 +1,16 @@
 # Site navigation links
 
 - title: HOME
-  url:
+  url: /
   excerpt:
   image: 
+
+
+
+
+- title: Jekyll
+  url: /jekyll/
+
+
+- title: test
+  url : /test/
