@@ -1,18 +1,21 @@
 ---
 layout: article
-title: "小记"
+title: "教程"
 categories: test
 date: 2017-10-8
+comments: true
+image:
+     teaser: /teaser/ss.png
+
 
 ---
 
 
->测试
-
-#一级标题
+>你懂的。。
 
 
-##二级标题
+
+
 
 
 

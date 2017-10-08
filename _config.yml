@@ -23,10 +23,12 @@ gems:
   - jekyll-gist
   - jekyll-feed
 
+#pinglun
+
 
 # Site owner
 owner:
-  name: iecs(孟凡喆）
+  name: iecs
   email: mfzh502045076@gmail.com
   twitter: iecs
   google:
