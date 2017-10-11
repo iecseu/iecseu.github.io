@@ -1,5 +1,74 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="/atom.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-10-08T17:57:54+08:00</updated><id>/</id><title>iecs&#39; Site</title><subtitle>This is a description of my awesome site.</subtitle><entry><title>教程</title><link href="/test/set-up-site/" rel="alternate" type="text/html" title="教程" /><published>2017-10-08T00:00:00+08:00</published><updated>2017-10-08T00:00:00+08:00</updated><id>/test/set-up-site</id><content type="html" xml:base="/test/set-up-site/">&lt;blockquote&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.1.6">Jekyll</generator><link href="/atom.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2017-10-12T00:34:15+08:00</updated><id>/</id><title>iecs&#39; Site</title><subtitle>This is a description of my awesome site.</subtitle><entry><title>Hello python</title><link href="/python/hello-python/" rel="alternate" type="text/html" title="Hello python" /><published>2017-10-12T00:00:00+08:00</published><updated>2017-10-12T00:00:00+08:00</updated><id>/python/hello-python</id><content type="html" xml:base="/python/hello-python/">&lt;h1 id=&quot;codingbat-&quot;&gt;CodingBat 刷题记&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;先从warmup搞起，熟悉一下语法&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;##python中的string型变量操作&lt;/p&gt;
+
+&lt;h3 id=&quot;section&quot;&gt;题目&lt;/h3&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+Given a string, return a new string where &quot;not &quot; has been added to the front. However, if the string already begins with &quot;not&quot;, return the string unchanged. 
+
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;###答案解法&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;not_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;len&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;not&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;not &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;###我的解法&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;not_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;a_str&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;not&quot;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a_str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;not &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;str[:n]&lt;/code&gt;与&lt;code class=&quot;highlighter-rouge&quot;&gt;str[n:]&lt;/code&gt;的区别：前者不算尾，后者算头&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ste[1:-1]&lt;/code&gt;的含义&lt;/p&gt;
+
+&lt;p&gt;考虑string的长度&lt;/p&gt;</content><summary>CodingBat 刷题记</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;teaser&quot;=&gt;&quot;/teaser/hello.jpg&quot;}" /></entry><entry><title>教程</title><link href="/test/set-up-site/" rel="alternate" type="text/html" title="教程" /><published>2017-10-08T00:00:00+08:00</published><updated>2017-10-08T00:00:00+08:00</updated><id>/test/set-up-site</id><content type="html" xml:base="/test/set-up-site/">&lt;blockquote&gt;
   &lt;p&gt;你懂的。。&lt;/p&gt;
-&lt;/blockquote&gt;</content><summary>你懂的。。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;teaser&quot;=&gt;&quot;/teaser/ss.png&quot;}" /></entry><entry><title>Hello</title><link href="/jekyll/hello-world/" rel="alternate" type="text/html" title="Hello" /><published>2017-10-08T00:00:00+08:00</published><updated>2017-10-08T00:00:00+08:00</updated><id>/jekyll/hello-world</id><content type="html" xml:base="/jekyll/hello-world/">&lt;blockquote&gt;
-  &lt;p&gt;Hello,WOrld~&lt;/p&gt;
-&lt;/blockquote&gt;</content><summary>Hello,WOrld~</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;teaser&quot;=&gt;&quot;/teaser/hello.jpg&quot;}" /></entry></feed>
+&lt;/blockquote&gt;</content><summary>你懂的。。</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;teaser&quot;=&gt;&quot;/teaser/ss.png&quot;}" /></entry><entry><title>Hello</title><link href="/jekyll/hello-world/" rel="alternate" type="text/html" title="Hello" /><published>2017-10-08T00:00:00+08:00</published><updated>2017-10-08T00:00:00+08:00</updated><id>/jekyll/hello-world</id><content type="html" xml:base="/jekyll/hello-world/">&lt;h1 id=&quot;section&quot;&gt;新世界&lt;/h1&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;抓住这段闲时，搞一些有意思的事情&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;其实，从折腾博客到现在，基本上打一些功能我已经基本摸清了，但是究竟在博客上写一些
+什么东西，怎么让写出来的东西更加精美，还需要一段时间来思考。趁着这段闲时，我想将
+自己大学期间所做的一些事情做一些总结。&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;SRTP项目——基于LabVIEW的汽车自动驾驶中的行人动静姿态识别技术与实验研究&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;全国大学生电子设计竞赛及培训的种种&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;嚷嚷了好久的python是不是不该提高一下水平啦&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;还有那不得不用的linux 系统能不能认真学一学啦&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;…………………………&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><summary>新世界</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="{&quot;teaser&quot;=&gt;&quot;/teaser/hello.jpg&quot;}" /></entry></feed>
