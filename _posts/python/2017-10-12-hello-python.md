@@ -20,7 +20,7 @@ image:
 
 
 
-##python中的string型变量操作
+## python中的string型变量操作
 
 
 ### 题目
@@ -33,7 +33,7 @@ Given a string, return a new string where "not " has been added to the front. Ho
 ~~~
 
 
-###答案解法
+### 答案解法
 
 
 ~~~ python
@@ -46,7 +46,7 @@ def not_string(str):
 ~~~
 
 
-###我的解法
+### 我的解法
 
 ~~~ python
 
